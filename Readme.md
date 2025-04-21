@@ -23,13 +23,13 @@ The tool provides an intuitive way to explore and analyze solutions computed by 
 
 ## Requirements
 - Python 3.x
-- (Git LFS)
 
 - numpy
 - pandas
 - matplotlib
 - geopandas
 - shapely
+- (Optional: Git LFS)
 
 ## Setup
 The file osterloh/solutions_labeled_osterloh.csv is tracked using Git LFS due to its size (~400 MB).
