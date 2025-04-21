@@ -23,13 +23,24 @@ The tool provides an intuitive way to explore and analyze solutions computed by 
 
 ## Requirements
 - Python 3.x
-- Git LFS
+- (Git LFS)
 
 - numpy
 - pandas
 - matplotlib
 - geopandas
 - shapely
+
+## Setup
+The file osterloh/solutions_labeled_osterloh.csv is tracked using Git LFS due to its size (~400 MB).
+If you clone the repository via Git (with Git LFS installed), the full file will be downloaded automatically.
+
+However, if you download the repository as a ZIP archive, Git LFS files are not included. Instead, you will get a small placeholder .csv file.
+
+To work around this, a compressed version of the actual CSV is provided in osterloh/solutions_labeled_osterloh.zip.
+To use the tool:
+1. Extract the ZIP file.
+2. Replace the placeholder file osterloh/solutions_labeled_osterloh.csv with the extracted CSV.
 
 ## Running the tool
 Simply execute the script using Python:
