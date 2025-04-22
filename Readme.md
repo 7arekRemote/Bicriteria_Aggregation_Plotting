@@ -2,7 +2,7 @@
 This interactive visualization tool was developed as part of our paper 'Parameterized Algorithms for Computing Pareto Sets' (link to be added). It visualizes solutions produced by the Bicriteria Aggregation algorithm.
 
 ## About
-The tool provides an intuitive way to explore and analyze solutions computed by the Bicriteria Aggregation algorithm. Due to GitHub's file size limitations, only the Osterloh dataset is included, as it has the smallest solutions output file.
+The tool provides an interactive way to explore and analyze solutions computed by the Bicriteria Aggregation algorithm. Due to GitHub's file size limitations, only the Osterloh dataset is included, as it has the smallest solutions output file.
 
 ## Features
 - Left view: Geometric visualization of a selected solution:
