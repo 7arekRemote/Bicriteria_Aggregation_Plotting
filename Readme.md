@@ -22,7 +22,8 @@ The tool provides an interactive way to explore and analyze solutions computed b
     - Right click: Select the closest extreme solution to the cursor. The selected solution is displayed on the left.
 
 ## Requirements
-- Python 3.x
+- Python 3.7+ (Recommended)
+The code may also run with lower versions, but this has not been tested.
 
 - numpy
 - pandas

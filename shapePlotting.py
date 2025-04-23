@@ -19,9 +19,14 @@ def plotGeo(shapefile_path,outer_file,ids=None,ax = None, reload=False):
         df_filtered = df_outer[df_outer['id'].isin(ids)]
 
     polygons = []
-    for polygon_str in df_filtered['geometry']:
-        polygon_coords = [tuple(map(float, point.split())) for point in polygon_str.replace('POLYGON ((', '').replace('))', '').split(', ')]
-        polygon = Polygon(polygon_coords)
+    for geom in df_filtered['geometry']:
+        if isinstance(geom, str):
+            polygon_coords = [tuple(map(float, point.split())) for point in geom.replace('POLYGON ((', '').replace('))', '').split(', ')]
+            polygon = Polygon(polygon_coords)
+        elif isinstance(geom, Polygon):
+            polygon = geom
+        else:
+            raise ValueError(f"Unkown type: {type(geom)}")
         polygons.append(polygon)
 
     gdf_custom = gpd.GeoDataFrame(df_filtered, geometry=polygons)
